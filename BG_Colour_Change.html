@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>change color</title>
+</head>
+<body align="center">
+    <h1>Change Background Color</h1>
+    <input type="text" id="color" placeholder="Enter color" style="margin-top: 150px;">
+    <button onclick="changeColor()">Change Color</button>
+    <script>
+        function changeColor(){
+            var color=document.getElementById('color').value
+            var body=document.getElementsByTagName('body')[0]
+            body.style.backgroundColor=color
+        }
+    </script>
+</body>
+</html>
